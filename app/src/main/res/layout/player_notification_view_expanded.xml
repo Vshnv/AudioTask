@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/player_gradient"
+    android:gravity="center"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/audio_thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icons_music"
+        android:layout_weight="0.1">
+    </ImageView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/audio_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textFontWeight="800"
+                    android:text="Radioactive">
+                </TextView>
+                <TextView
+                    android:id="@+id/audio_artist"
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Imagine Dragons">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="3">
+                <ImageButton
+                    android:id="@+id/btn_prev_expanded"
+
+                    android:layout_marginStart="30dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/icons_previous" />
+                <ImageButton
+                    android:id="@+id/btn_play_expanded"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:scaleX="0.75"
+                    android:scaleY="0.75"
+                    android:src="@drawable/icons_play" />
+                <ImageButton
+                    android:id="@+id/btn_next_expanded"
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_button"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/icons_next" />
+                <ImageButton
+                    android:id="@+id/btn_stop_expanded"
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/round_button"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:src="@drawable/icons_stop" />
+            </LinearLayout>
+            <!--ProgressBar
+                android:id="@+id/audio_position_bar"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:progress="25"/-->
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
